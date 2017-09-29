@@ -10,33 +10,29 @@
 <style>
     
     p{
-        width:50px;
-        height:50px;
-        background-color:#1abc9c;
+        width: 50px;
+        height: 50px;
+        background-color: #1abc9c;
+        color:#ecf0f1;
+        border:2px solid #2c3e50;    
     }
 
-    p.move-right{
+    p.transformed{
         background-color:#3498db;
-        transform: translateX(100px);
+      transform-origin:0 0;
+      transform: scale(2);
+/*       transform: scaleX(2); */
+/*         transform: scale(2); */
     }
-
-    p.move-down{
-        background-color:#3498db;
-        transform: translateY(50px);
-    }
-
-    p:hover{
-        transform: translate(20px,20px);
-    }
+    
 
 
 </style>
 <body>
     
-        <p></p>
-        <p class="move-right"></p>
-        <p></p>
-        <p class="move-down"></p>
+        <p>Hello</p>
+        <p class="transformed">Hello</p>
+       
 
     
 </body>
